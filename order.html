@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online - Sharma's Coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Sharma's Coffee</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#menu">Menu</a>
+                <a href="index.html#gallery">Gallery</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Order Layout -->
+    <div class="order-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul class="category-list">
+                <li class="active" data-category="coffee">Coffee</li>
+                <li data-category="burger">Burgers</li>
+                <li data-category="pasta">Pasta</li>
+                <li data-category="beverages">Beverages</li>
+                <li data-category="dessert">Desserts</li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="menu-content">
+            <div id="coffee" class="menu-category-section">
+                <h2 class="category-title">Coffee</h2>
+                <div class="menu-items-grid">
+                    <!-- Items will be populated by JS -->
+                </div>
+            </div>
+            <div id="burger" class="menu-category-section">
+                <h2 class="category-title">Burgers</h2>
+                <div class="menu-items-grid"></div>
+            </div>
+            <div id="pasta" class="menu-category-section">
+                <h2 class="category-title">Pasta</h2>
+                <div class="menu-items-grid"></div>
+            </div>
+            <div id="beverages" class="menu-category-section">
+                <h2 class="category-title">Beverages</h2>
+                <div class="menu-items-grid"></div>
+            </div>
+            <div id="dessert" class="menu-category-section">
+                <h2 class="category-title">Desserts</h2>
+                <div class="menu-items-grid"></div>
+            </div>
+            <div class="menu-disclaimer text-center mt-4">
+                <p class="text-muted" style="font-size: 0.9rem; opacity: 0.7;">* Images are for reference only. Actual
+                    presentation may vary.</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Sharma's Coffee</h3>
+                <p>Premium coffee, delicious food.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="developer.html">About the Developer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2025 Kush Sharma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="order.js"></script>
+</body>
+
+</html>
